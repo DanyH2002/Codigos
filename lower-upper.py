@@ -1,10 +1,11 @@
 string = input("Introduce un String: ")
 
-print(f"\n¿Todas las letras estan en minusculas?: (string.lslower())")
+# Verificar si todas las letras están en minúsculas
+print(f"\n¿Todas las letras están en minúsculas?: {string.islower()}")
 string = string.lower()
-print(f"String en minusculas: (string)")
+print(f"String en minúsculas: {string}")
 
-print(f"\n¿Todas las letras estan en mayusculas?: (string.isupper())")
-print(f"String en mayusuclas: (string.upper())")
-print(f"String original: (string)")
-
+# Verificar si todas las letras están en mayúsculas
+print(f"\n¿Todas las letras están en mayúsculas?: {string.isupper()}")
+print(f"String en mayúsculas: {string.upper()}")
+print(f"String original: {string}")

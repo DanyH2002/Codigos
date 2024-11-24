@@ -1,6 +1,11 @@
+# Uso de matrices para sumarlas, 
+# se pide al usuario el número de matrices a sumar, 
+# el número de filas y columnas de las matrices y
+# los elementos de cada matriz 
+
 number_of_matrix = int(input("¿Cuantas matrices quieres sumar?:"))
 
-if number_of_matrix >1:
+if number_of_matrix > 1:
 
     rows = int(input("¿Cuantas filas tendran las matrices?:"))
     columns = int(input("¿Cuantas columnas tendran las matrices?: "))
@@ -12,9 +17,14 @@ if number_of_matrix >1:
         matrix = []
         for row in range(rows):
             new_row = []
-            for clumn in range(columns):
+            for column in range(columns):  # Cambié 'clumn' por 'column' para mayor claridad
                 new_row.append(
-                    int(input(f"Introduce un elemento para la matriz {number + 1}fila {row}, columna{column}:")))
+                    int(
+                        input(
+                            f"Introduce un elemento para la matriz {number + 1}, fila {row}, columna {column}:"
+                        )
+                    )
+                )
             matrix.append(new_row)
         matrix_list.append(matrix)
 
@@ -26,27 +36,26 @@ if number_of_matrix >1:
             sum_matrix = 0
             for matrix_position in range(len(matrix_list)):
                 sum_matrix += matrix_list[matrix_position][row][column]
-            new.row.append(sum_matrix)
+            new_row.append(sum_matrix)  # Corregí 'new.row' por 'new_row'
         matrix.append(new_row)
     matrix_list.append(matrix)
 
-    #Imprimir matrices
+    # Imprimir matrices
     for matrix_row in range(rows):
         for matrix_list_position in range(len(matrix_list)):
             if matrix_row != 1:
-                print(f"{matrix_list[matrix_list_position][matrix_row]}", end = "   ")
+                print(f"{matrix_list[matrix_list_position][matrix_row]}", end="   ")
             else:
                 if matrix_list_position < len(matrix_list) - 2:
-                    print(f"{matrix_list[matrix_list_position][matrix_row]}", end = " + ")
+                    print(f"{matrix_list[matrix_list_position][matrix_row]}", end=" + ")
                 elif matrix_list_position < len(matrix_list) - 2:
-                    print(f"{matrix_list[matrix_list_position][matrix_row]}", end = " = ")
+                    print(f"{matrix_list[matrix_list_position][matrix_row]}", end=" = ")
                 else:
-                    print(f"{matrix_list[matrix_list_position][matrix_row]}", end = " +   ")
-        
-        print()                    
+                    print(
+                        f"{matrix_list[matrix_list_position][matrix_row]}", end=" +   "
+                    )
 
-
-
+        print()
 
 else:
     print("Se necesitan dos o mas matrices para realizar la suma.")

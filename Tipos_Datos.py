@@ -17,5 +17,3 @@ print(nombre, type(nombre))
 #tipo de dato booleano
 verdadero_falso = 3 == 3
 print(verdadero_falso, type(verdadero_falso))
-
-

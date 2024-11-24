@@ -1,19 +1,19 @@
 print("Lista original")
-letters = ["b", "d", "f", "g"]
-print(f"Lista:{letters}")
+letters = ["b", "d", "f", "g"] # Lista original
+print(f"Lista:{letters}") # Imprimiendo la lista original
 
 print("\nInsertando 'a' en posicion 0")
-lettera = [0, "a"]
-print(f"Lista: {letters}")
+letters.insert(0, "a") # Insertando 'a' en la posicion 0
+print(f"Lista: {letters}") # Imprimiendo la lista, con las modificaciones
 
 print("\nInsertando 'c' en posicion 2")
-letters = [2, "c"]
+letters.insert(2, "c") # Insertando 'c' en la posicion 2
 print(f"Lista:{letters}")
 
 print("\nInsertando 'e' en posicion 4")
-lettera = [4, "e"]
+letters.insert(4, "e") # Insertando 'e' en la posicion 4
 print(f"La lista: {letters}")
 
 print("\nInsertando 'z' en posicion 100")
-lettera = [100, "z"]
+letters.insert(100, "z") # Insertando 'z' en la posicion 100
 print(f"La lista: {letters}")

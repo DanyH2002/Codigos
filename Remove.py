@@ -1,3 +1,5 @@
+# Creacion de listas y eliminacion de elementos de la lista con el metodo remove()
+
 vocales = ["a", "e", "i", "o", "u"]
 print(f"{vocales} \nElemento a eliminar: i")
 vocales.remove("i")
@@ -14,7 +16,7 @@ vocales.remove("i")
 print(vocales)
 
 vocales = ["a", "e", "i", "o", "u"]
-print(f"{vocales} \nElemento a eliminar: I")
-vocales.remove("I")
+print(f"{vocales} \nElemento a eliminar: a")
+vocales.remove("a")
 print(vocales)
 

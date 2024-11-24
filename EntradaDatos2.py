@@ -1,1 +1,1 @@
-nombre = input()
+nombre = input() # Recibe una cadena de texto

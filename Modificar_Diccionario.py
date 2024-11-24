@@ -1,8 +1,6 @@
-fruits_dict = {"manzana": 2.50,
-               "platano": 1.75,
-               "naranja": 3.00,
-               "mango": 4.25
-               }
+# Creacion de un diccionario con frutas y sus precios, 
+# modificar el precio de una fruta y agregar una nueva fruta con su precio
+fruits_dict = {"manzana": 2.50, "platano": 1.75, "naranja": 3.00, "mango": 4.25}
 
 print(f"Diccionario original: {fruits_dict}")
 

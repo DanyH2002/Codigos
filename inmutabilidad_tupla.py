@@ -8,11 +8,11 @@ info_tuple = ([1, 2, 3], {"uno"; 1, "dos": 2}, (3, 2))
 info_tuple[0] =2
 """
 
-info_tuple = ([1, 2, 3], {"uno"; 1, "dos": 2}, (3, 2))
-print(f"Tupla original: {info_tuple}")
+info_tuple = ([1, 2, 3], {"uno": 1, "dos": 2}, (3, 2))
+print(f"Tupla original: {info_tuple}") # Imprime la tupla original
 info_tuple[0][1] = 99
-print(f"Tupla[0][1]:{info_tuple} \n")
+print(f"Tupla[0][1]:{info_tuple} \n") # Imprime la tupla modificada
 
-print(f"Tupla original: {info_tuple}")
+print(f"Tupla original: {info_tuple}") # Imprime la tupla original, para ver los cambios
 info_tuple[1]['dos'] = 88
-print(f"Tupla[1]['dos']:{info_tuple} \n")
+print(f"Tupla[1]['dos']:{info_tuple} \n") # Imprime la tupla modificada

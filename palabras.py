@@ -1,5 +1,5 @@
 prinT = 5
 Print = 6
-resultado = prinT + Print
+resultado = prinT + Print # Suma de dos números
 
 print(resultado)
